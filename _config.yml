@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Makoto Tanaka"
 title_separator          : "-"
 name                     : &name "Makoto Tanaka"
-description              : &description "I am a Ph.D. Candidate in Economics at the University of Virginia. My research interests are Monetary Economics, Macroeconomics, and Applied Time Series."
+description              : &description > "I am a Ph.D. Candidate in Economics at the University of Virginia. My research interests are Monetary Economics, Macroeconomics, and Applied Time Series."
 #url                     : https://makotolenza.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "makotolenza/makotolenza.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Makoto Tanaka"
   avatar           : "2025_closerphoto.jpg"
-  bio              : "I am a Ph.D. Candidate in Economics at the University of Virginia. My research interests are Monetary Economics, Macroeconomics, and Applied Time Series." #Your biography for the left-hand sidebar
+  bio              : "" #Your biography for the left-hand sidebar
   location         : #"Kunitachi, Tokyo"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
