@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Makoto Tanaka"
   avatar           : "2025_closerphoto.jpg"
-  bio              : "" #Your biography for the left-hand sidebar
+  bio              : "I am a Ph.D. Candidate in Economics at the University of Virginia. My research interests are Monetary Economics, Macroeconomics, and Applied Time Series." #Your biography for the left-hand sidebar
   location         : #"Kunitachi, Tokyo"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
