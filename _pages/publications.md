@@ -11,7 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign working = site.publications | where: "venue", "Working Paper" | sort: "date" | reverse %}
+{% assign working = site.publications | where: "venue", "Working Papers" | sort: "date" | reverse %}
 
 {% for post in working %}
   <p>
