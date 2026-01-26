@@ -11,4 +11,16 @@ author_profile: true
 
 {% include base_path %}
 
+{% assign working = site.publications | where: "venue", "Working Paper" | sort: "date" | reverse %}
+
+{% for post in working %}
+  <p>
+    <strong>{{ post.title }}</strong>
+    {% if post.paperurl %}
+      &nbsp;[<a href="{{ post.paperurl | relative_url }}">PDF</a>]
+    {% endif %}
+  </p>
+{% endfor %}
+
+
 <!-- <br/> -->
