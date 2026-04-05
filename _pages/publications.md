@@ -1,12 +1,12 @@
 ---
 layout: archive
-title: "Working Papers"
+title: Working Papers
 permalink: /publications/
 author_profile: true
 ---
 
 {% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+You can also find my articles on my Google Scholar profile.
 {% endif %}
 
 {% include base_path %}
@@ -15,12 +15,9 @@ author_profile: true
 
 {% for post in working %}
   <p>
-    <strong>{{ post.title }}</strong>
-    {% if post.paperurl %}
-      &nbsp;[<a href="{{ post.paperurl | relative_url }}">PDF</a>]
-    {% endif %}
+    <strong><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></strong>
+    {% if post.paperurl %} <a href="{{ post.paperurl }}">[PDF]</a>{% endif %}<br>
+    {% if post.authors %}{{ post.authors }}<br>{% endif %}
+    {% if post.pubtype %}<em>{{ post.pubtype }}</em><br>{% endif %}
   </p>
 {% endfor %}
-
-
-<!-- <br/> -->
