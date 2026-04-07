@@ -21,5 +21,8 @@ You can also find my articles on my Google Scholar profile.
     {% endif %}<br>
     {{ post.authors }}<br>
     <em>{{ post.pubtype }}</em>
+    {% if post.status %}
+      <br><em>{{ post.status }}</em>
+    {% endif %}
   </p>
 {% endfor %}
