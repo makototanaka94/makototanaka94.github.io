@@ -15,12 +15,13 @@ You can also find my articles on my Google Scholar profile.
 
 {% for post in working %}
   <p>
-    <strong>{{ post.title }}</strong>
+    <strong>{{ post.title }}</strong><br>
+
     {% if post.pubtype %}
-      — <em>{{ post.pubtype }}</em>
+      <em>{{ post.pubtype }}</em>
     {% endif %}
     {% if post.paperurl %}
-      <a href="{{ post.paperurl }}">[PDF]</a>
+      &nbsp;(<a href="{{ post.paperurl }}">PDF</a>)
     {% endif %}<br>
 
     {% if post.authors %}
