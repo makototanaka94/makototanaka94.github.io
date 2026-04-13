@@ -14,26 +14,22 @@ You can also find my articles on my Google Scholar profile.
 {% assign working = site.publications | where: "venue", "Working Papers" | sort: "date" | reverse %}
 
 {% for post in working %}
-  <div style="margin-bottom: 1em;">
-    <div><strong>{{ post.title }}</strong></div>
+  <p>
+    <strong>{{ post.title }}</strong><br>
 
     {% if post.authors %}
-      <div>{{ post.authors }}</div>
+      {{ post.authors }}<br>
     {% endif %}
 
+    {% if post.pubtype %}
+      <em>{{ post.pubtype }}</em>
+    {% endif %}
     {% if post.paperurl %}
-      <div>
-        {% if post.pubtype %}
-          <em>{{ post.pubtype }}</em>
-        {% endif %}
-        <a href="{{ post.paperurl }}">[PDF]</a>
-      </div>
-    {% elsif post.pubtype %}
-      <div><em>{{ post.pubtype }}</em></div>
+      <a href="{{ post.paperurl }}">[PDF]</a>
     {% endif %}
 
     {% if post.status %}
-      <div><em>{{ post.status }}</em></div>
+      <br><em>{{ post.status }}</em>
     {% endif %}
-  </div>
+  </p>
 {% endfor %}
