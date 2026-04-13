@@ -17,15 +17,17 @@ You can also find my articles on my Google Scholar profile.
   <p>
     <strong>{{ post.title }}</strong><br>
 
-    {% if post.pubtype %}
-      <em>{{ post.pubtype }}</em>
-    {% endif %}
-    {% if post.paperurl %}
-      &nbsp;(<a href="{{ post.paperurl }}">PDF</a>)
-    {% endif %}<br>
-
     {% if post.authors %}
       {{ post.authors }}<br>
+    {% endif %}
+
+    {% if post.paperurl %}
+      {% if post.pubtype %}
+        <em>{{ post.pubtype }}</em>
+      {% endif %}
+      <a href="{{ post.paperurl }}">[PDF]</a><br>
+    {% elsif post.pubtype %}
+      <em>{{ post.pubtype }}</em><br>
     {% endif %}
 
     {% if post.status %}
