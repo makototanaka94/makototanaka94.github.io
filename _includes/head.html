@@ -4,6 +4,18 @@
 
 {% include seo.html %}
 
+<meta property="og:site_name" content="Makoto Tanaka">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Makoto Tanaka",
+  "alternateName": "Makoto Tanaka Economics",
+  "url": "https://makototanaka94.github.io/"
+}
+</script>
+
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -12,10 +24,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  document.documentElement.className =
+    document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon.png">
+
 <meta http-equiv="cleartype" content="on">
