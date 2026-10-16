@@ -9,7 +9,7 @@ redirect_from:
 ---
 I am a Ph.D. Candidate in Economics at the University of Virginia. My research interests are in Monetary Economics, Macroeconomics, and Applied Time Series.
 
-I was a Ph.D. Intern at the International Monetary Fund (IMF) during the summer of 2025 and am a Ph.D. Intern at the Bank of England during the summer of 2026.
+I was a Ph.D. Intern at the International Monetary Fund (IMF) during the summer of 2025 and a Ph.D. Intern at the Bank of England during the summer of 2026.
 
 **I will be on the academic job market in 2026–2027.**
 
