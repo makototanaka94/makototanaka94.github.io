@@ -1,3 +1,4 @@
+
 ---
 layout: archive
 title: Research
@@ -10,6 +11,30 @@ You can also find my articles on my Google Scholar profile.
 {% endif %}
 
 {% include base_path %}
+
+<h2>Job Market Paper</h2>
+
+{% assign jmp = site.publications | where: "venue", "Job Market Paper" | sort: "date" | reverse %}
+
+{% for post in jmp %}
+  <p>
+    <strong>{{ post.title }}</strong><br>
+
+    {% if post.authors %}
+      {{ post.authors }}<br>
+    {% endif %}
+
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">[PDF]</a>
+    {% endif %}
+
+    {% if post.status %}
+      <br><em>{{ post.status }}</em>
+    {% endif %}
+  </p>
+{% endfor %}
+
+<hr>
 
 <h2>Working Papers</h2>
 
@@ -55,3 +80,4 @@ You can also find my articles on my Google Scholar profile.
     {% endif %}
   </p>
 {% endfor %}
+
